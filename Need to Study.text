@@ -1,0 +1,13 @@
+1. bitwise operator and how they help in DSA problem solving
+    XOR:
+        Single Number (LeetCode 136)
+        Find Two Single Numbers (LeetCode 260)
+    AND, OR, NOT:
+        Count Set Bits in a Number
+        Subset Generation Using Bitmasking  
+    Left/Right Shift:
+        Power of Two Check (LeetCode 231)
+        Efficient Multiplication/Division by Powers of 2
+
+
+

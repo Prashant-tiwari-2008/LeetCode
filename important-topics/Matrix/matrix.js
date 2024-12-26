@@ -93,15 +93,46 @@ let matrix2 = [
 // ]
 
 function rotate(matrix) {
-    let result = [];
-    for (let i = matrix.length - 1; i >= 0; i--) {
-        let row = [];
-        for (let j = matrix[i].length - 1; j >= 0; j--) {
-            row.push(matrix[j][i])
+    let n = matrix.length;
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < i; j++) {
+            [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]]
         }
-        result.push(row)
     }
-    return result;
+    for (let row of matrix) {
+        row.reverse();
+    }
+    return matrix
 }
 
-console.log(rotate(matrix2))
+console.log("90d rotation", rotate(matrix2))
+
+// 5. Search in a Row-Wise and Column-Wise Sorted Matrix
+let target = 5;
+function searchMat(matrix, tar) {
+    let row = 0;
+    let col = matrix[0].length - 1;
+    while (row < matrix.length && col >= 0) {
+        if(matrix[row][col] === tar) return true;
+        if(matrix[row][col] > tar) col--;
+        else row++
+    }
+    return false
+}
+
+console.log("searcing",searchMat(matrix1, target))
+
+// 6. Find the Maximum Element in a Matrix
+// 7. Print Diagonals of a Matrix
+// 8. Count Zeros in a Matrix
+
+// 9. Boundary Elements of a Matrix => Print only the boundary elements of the matrix.
+// need to do
+function printBoundary(matrix){
+
+}
+
+console.log(printBoundary(matrix1));
+
+// 10. Row with Maximum Sum
+// 11. Check if Matrix is Symmetric

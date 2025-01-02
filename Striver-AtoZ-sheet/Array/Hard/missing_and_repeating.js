@@ -11,8 +11,13 @@ function findTwoElement(arr) {
     let missingNumber;
     let repeatedNumber;
     for (let i = 0; i < arr.length; i++) {
-
+        if (i == 0 && arr[i] !== 1) {
+            missingNumber = 1;
+        } else if (!missingNumber && arr[i] + 1 !== arr[i + 1]) {
+            missingNumber = arr[i] + 1;
+        }
     }
+    return missingNumber;
 }
 
 console.log(findTwoElement(arr1))

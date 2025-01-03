@@ -9,7 +9,6 @@ let arr3 = [1, -1, 5, -2, 3];
 let k3 = 3 // 4
 
 function lenOfLongestSubarr(arr, k) {
-    debugger
     let prefixSum = 0;
     let maxLength = 0;
     const prefixMap = new Map();

@@ -24,8 +24,11 @@ function rangeSum(arr, l, r) {
 let arr1 = [2, 3, 6, 8, 10]
 // console.log(rangeSum(arr1, 1, 3))
 
-// 2.count Subarry with a given sum => given an array nums and a target sumk, count the number of subarray that sum up to k.
+
+
+// 2.count Subarry with a given sum => given an array nums and a target sum k, count the number of subarray that sum up to k.
 function subarraySum(nums, k) {
+    debugger
     let prefixSum = 0;
     let count = 0;
     let hash = { 0: 1 } // store frequeency of prefix sums
@@ -43,7 +46,10 @@ function subarraySum(nums, k) {
 
 let nums = [1, 1, 1, 2];
 let k = 2;
-// console.log(subarraySum(nums, k)) // 3
+console.log(subarraySum(nums, k)) // 3
+
+
+
 
 //3. Maximum Subarray Sum Less than or Equal to K => Given an array arr, find the maximum sum of a subarray that is less than or equal to k.
 
@@ -77,4 +83,4 @@ function maxSubArraySumLessThanOrEqualToK(nums, k) {
 // Example:
 let nums1 = [2, -1, 3, -2, 5];
 let k1 = 7;
-console.log(maxSubArraySumLessThanOrEqualToK(nums1, k1)); // Output: 7
+// console.log(maxSubArraySumLessThanOrEqualToK(nums1, k1)); // Output: 7

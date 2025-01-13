@@ -14,3 +14,16 @@ var minSubArrayLen = function (target, nums) {
     }
     return length === Infinity ? 0 : length;
 }
+
+let nums1 = [2, 3, 1, 2, 4, 3]
+let target1 = 7
+
+let nums2 = [1, 4, 4]
+let target2 = 4
+
+let nums3 = [1, 1, 1, 1, 1, 1, 1, 1]
+let target3 = 11
+
+console.log(min(target1,nums1))
+console.log(min(target2,nums2))
+console.log(min(target3,nums3))

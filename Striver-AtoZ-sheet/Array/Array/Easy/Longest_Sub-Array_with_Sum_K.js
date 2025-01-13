@@ -9,9 +9,8 @@ let k2 = 3
 let arr3 = [1, -1, 5, -2 - 3]
 let k4 = 3
 
+// not right solution
 function lenOfLongestSubarr(arr, k) {
-    debugger
-    console.log("origin", arr);
     let prefix = 0;
     let maxLength = 0;
     let hash = { 0: 1 };
